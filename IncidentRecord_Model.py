@@ -1,12 +1,8 @@
 """
 CAMY KAM
-Assignment 1
-CST8333 Programming Language Research Project
-22W Semester
-Language: Python
 """
 
-class Incident:                                                    #CAMY KAM
+class Incident:
     """ A class to represent a pipeline incident
 
     Attributes
@@ -31,7 +27,7 @@ class Incident:                                                    #CAMY KAM
         what occurred with the pipeline
 
     """
-    def __init__(self, incidentNum,incidentType, reportedDate, nearestCenter, province, company, substance, significant, whatHappened):    #CAMY KAM
+    def __init__(self, incidentNum,incidentType, reportedDate, nearestCenter, province, company, substance, significant, whatHappened):
         """Constructs an Incident Object
 
         :param incidentNum: the incident number
@@ -44,7 +40,7 @@ class Incident:                                                    #CAMY KAM
         :param significant: whether incident was a significant one
         :param whatHappened: what occurred with the pipeline
         """
-        self.incidentNum = incidentNum                                                                                         #CAMY KAM
+        self.incidentNum = incidentNum
         self.incidentType= incidentType
         self.reportedDate = reportedDate
         self.nearestCenter = nearestCenter
@@ -62,6 +58,6 @@ class Incident:                                                    #CAMY KAM
         :return: Incident object attributes in a string format
         """
         return '%s, %s, %s, %s, %s, %s, %s, %s, %s,'%(self.incidentNum, self.incidentType,self.reportedDate,self.nearestCenter, self.province, self.company,
-                              self.substance,self.significant, self.whatHappened ) + " Camy"
+                              self.substance,self.significant, self.whatHappened )
 
 
